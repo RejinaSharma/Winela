@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --pri-color:#041522;
+    --sec-color:#e97338;
+    --greyish:#ffffffa8;
+    --main_font: 'Montserrat', sans-serif;
+    --sec_font:  'Raleway', sans-serif;
+}
+@font-face {
+    font-family: prata;
+    src: url(./../fonts/prata/Prata-Regular.ttf);
+}
+
+@font-face {
+    font-family: mont;
+    src: url(./../fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(./../fonts/raleway/Raleway-Medium.ttf);
+}
+
+body{
+    width: 100vw;
+    /* padding: 0 10px 0 10px; */
+    font-family: prata;
+}
+.black{
+    background-color: rgba(7, 7, 7, 0.5);
+    z-index: 5;
+    width: 100vw;
+    height: 150vh;
+}
+.main{
+    background-image: url(../images/backgrounnd.png);
+    background-size: cover;
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    /* z-index: -1; */
+}
+nav{
+   display: flex;
+   flex-direction: row;
+   color: white;
+   padding:60px 10px 20px 20px;
+   justify-content: space-between;
+   align-items: center;
+   position: sticky;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 30px 5px 30px;
+}
+.nav1{
+    align-content: center;
+}
+.nav2 button{
+    background:transparent;
+    width: fit-content;
+}
+.nav1 a:hover{
+    color: #e97338;
+}
+.home a{
+    color: #e97338;
+}
+.nav1 .home a:hover{
+    color: white;
+}
+.nav2 a:hover{
+    color: white;
+}
+
+button:hover{
+    background-color: #e97338;
+    border-color:#e97338;
+}
